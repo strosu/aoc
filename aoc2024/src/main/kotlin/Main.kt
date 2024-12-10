@@ -4,10 +4,9 @@ import java.io.File
 import kotlin.system.measureTimeMillis
 
 fun main() {
-    println(Problem9().solve(File("./build/resources/main/9/sample").readText()))
-    println(Problem9().solve(File("./build/resources/main/9/sample2").readText()))
+    println(Problem10().solve(File("./build/resources/main/10/sample").readLines()))
     val time = measureTimeMillis {
-        println(Problem9().solve(File("./build/resources/main/9/in").readText()))
+        println(Problem10().solve(File("./build/resources/main/10/in").readLines()))
         // call your function here
     }
 
@@ -44,4 +43,7 @@ fun solve1() {
 
     println(Problem8().solve(File("./build/resources/main/8/sample").readLines()))
     println(Problem8().solve(File("./build/resources/main/8/in").readLines()))
+
+    println(Problem9().solve(File("./build/resources/main/9/sample").readText()))
+    println(Problem9().solve(File("./build/resources/main/9/sample2").readText()))
 }
